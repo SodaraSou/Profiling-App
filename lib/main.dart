@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'xcore.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,15 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'Under Construction',
-            style: TextStyle(fontSize: 32),
-          ),
-        ),
-      ),
+    return GetMaterialApp(
+      title: 'Profiling App',
+      debugShowCheckedModeBanner: false,
+      initialRoute: PageRouter.home,
+      getPages: PageRouter.pages,
     );
   }
 }
