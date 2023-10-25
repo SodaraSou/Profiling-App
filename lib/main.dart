@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Profiling App',
       debugShowCheckedModeBanner: false,
-      initialRoute: PageRouter.home,
+      initialRoute: PageRouter.signIn,
       getPages: PageRouter.pages,
     );
   }
