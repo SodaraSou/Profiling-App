@@ -15,7 +15,7 @@ class SignInView extends GetView<SignInController> {
             child: SizedBox(
               height: Get.height,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -46,6 +46,9 @@ class SignInView extends GetView<SignInController> {
                         ),
                       ),
                     ],
+                  ),
+                  const SizedBox(
+                    height: kPadding * 4,
                   ),
                   Container(
                     padding: const EdgeInsets.only(
